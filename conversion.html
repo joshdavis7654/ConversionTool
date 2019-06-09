@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+
+<html lang = "en">
+<head>
+	<title>Conversion Tool</title>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="jquery-3.4.0.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+	<link rel="stylesheet" type="text/css" href="conversion.css">
+	 <script src="conversion.js"></script> 
+</head>
+
+<body style="background-color: black;">
+
+
+	<div id="myPage" class="container">
+    
+    <!--Conversion type selector -->	
+    <div class="row">
+
+      <div class="col-md-12">
+        <form class="topPage">
+    		  <h4 class="listHeader">Conversion Type</h4>
+    		  <select class="form-control"  id='firstList' name='firstList' onClick="getItems()">
+    		  </select>
+        </form>
+      </div>
+
+    </div>  
+    
+    <!--Conversion From selector -->      
+    <div class="row" style="margin-bottom: 30px;">
+
+      <div class="col-md-6">
+        <h4 class="listHeader">List 1</h4>
+    		<select onclick="convert1()" class="form-control" id='secondList' name='secondList' > <!--Conversion From selector --> 
+          <option value="">Please select a conversion type</option>
+    		</select>
+      </div>
+    	
+        
+      <div class="col-md-6"> 
+        <h4 class="listHeader">List 2</h4>
+    		<select onclick="convert1()" class="form-control" id='thirdList' name='thirdList' >  <!--Conversion To selector -->  
+          <option value="">Please select a conversion type</option>
+    		 </select>
+      </div>
+
+    </div>   
+      
+        
+    	
+    <div class="row">
+
+      <div class="col-md-12">
+        <h4 class="listHeader">Input</h4>
+  		  <input type="number" oninput="convert1()" style="text-align: center;" placeholder="Enter number here...." class="form-control" id="myCon"> 
+      </div> 
+
+    </div>
+  	
+    <!--
+    <div class="row">
+      <div id="butDiv" class="col-md-12">
+  	   <button id="conBut" onclick="convert1()">Convert</button>
+      </div> 
+  	</div>
+    -->
+    <div class="row">	
+  	 <p id="finalCon" ><br></p>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>
