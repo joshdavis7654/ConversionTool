@@ -50,7 +50,7 @@ function getItems(){
                 list3.options[4] = new Option('Newtons', 'Newtons');
                 list3.options[5] = new Option('Grams', 'Grams');
                 list3.options[6] = new Option('Ounces', 'Ounces');
-                 
+                document.getElementById("finalCon").innerHTML = "Please select valid units to convert from and to"; 
             }
             else if (list1SelectedValue=='Length')
             {
@@ -74,7 +74,7 @@ function getItems(){
                 list3.options[5] = new Option('inches', 'inches');
                 list3.options[6] = new Option('yards', 'yards');
                 list3.options[7] = new Option('miles', 'miles');
-                 
+                document.getElementById("finalCon").innerHTML = "Please select valid units to convert from and to"; 
             }
 
             else{
@@ -83,6 +83,7 @@ function getItems(){
                 list3.options.length=0;
                 list2.options[0] = new Option('Please select a conversion type', '');
                 list3.options[0] = new Option('Please select a conversion type', '');
+		document.getElementById("finalCon").innerHTML = "Please select a conversion type";
             }
 
 }
@@ -103,7 +104,7 @@ function convert1(){
     		var val3 = parseFloat(document.getElementById("myCon").value);
 
     		if(isNaN(val3) || val3==""){
-    			document.getElementById("finalCon").innerHTML = "Please insert a proper number";
+    			document.getElementById("finalCon").innerHTML = "Please insert a valid number";
     		}
 
             
@@ -123,15 +124,15 @@ function convert1(){
 
 		else{
                 if(list2.selectedIndex==0 && list3.selectedIndex>0){
-                    document.getElementById("finalCon").innerHTML = "Please pick the proper units to convert from";
+                    document.getElementById("finalCon").innerHTML = "Please select valid units to convert from";
                 }
 
                 else if(list3.selectedIndex==0 && list2.selectedIndex>0){
-                    document.getElementById("finalCon").innerHTML = "Please pick the proper units to convert to";
+                    document.getElementById("finalCon").innerHTML = "Please select valid units to convert to";
                 }
 
                 else{
-                    document.getElementById("finalCon").innerHTML = "Please pick the proper units to convert from and to"; 
+                    document.getElementById("finalCon").innerHTML = "Please select valid units to convert from and to"; 
                 }
                 
             }
