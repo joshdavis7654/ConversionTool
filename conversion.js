@@ -3,13 +3,14 @@
 $(document).ready(function () {
  
 	var list1 = document.getElementById('firstList');
- 
+ 	document.getElementById('myCon').value="";
 	list1.options[0] = new Option('--Select--', '');
 	list1.options[1] = new Option('Weight', 'Weight');
 	list1.options[2] = new Option('Length', 'Length');
 
 });
 
+/*function to populate the drop down menus based on user selection*/
 function getItems(){
  
             var list1 = document.getElementById('firstList');
