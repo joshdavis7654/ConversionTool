@@ -23,6 +23,11 @@
 	font-size: 30px;
 }
 
+#resetBut{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 #conBut{
 	background-color: #ddeaff;
 	font-size: 25px;
