@@ -31,7 +31,7 @@
       <div class="col-md-12">
         <form class="topPage">
     		  <h4 class="listHeader">Conversion Type</h4>
-    		  <select class="form-control"  id='firstList' name='firstList' onClick="getItems()">
+    		  <select class="form-control"  id='firstList' name='firstList' onchange="getItems()">
     		  </select>
         </form>
       </div>
@@ -43,7 +43,7 @@
 
       <div class="col-md-6">
         <h4 class="listHeader">List 1</h4>
-    		<select onclick="convert1()" class="form-control" id='secondList' name='secondList' > <!--Conversion From selector --> 
+    		<select onchange="convert1()" class="form-control" id='secondList' name='secondList' > <!--Conversion From selector --> 
           <option value="">Please select a conversion type</option>
     		</select>
       </div>
@@ -51,7 +51,7 @@
         
       <div class="col-md-6"> 
         <h4 class="listHeader">List 2</h4>
-    		<select onclick="convert1()" class="form-control" id='thirdList' name='thirdList' >  <!--Conversion To selector -->  
+    		<select onchange="convert1()" class="form-control" id='thirdList' name='thirdList' >  <!--Conversion To selector -->  
           <option value="">Please select a conversion type</option>
     		 </select>
       </div>
