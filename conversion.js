@@ -8,6 +8,13 @@ $(document).ready(function () {
 	list1.options[0] = new Option('--Select--', '');
 	list1.options[1] = new Option('Weight', 'Weight');
 	list1.options[2] = new Option('Length', 'Length');
+	
+	//Hides the keyboard if the user presses submit
+    $("#myCon").on("keyup", function(event){
+    if (event.keyCode == 13) {
+            event.preventDefault();
+            event.target.blur()
+        }
 
 });
 
