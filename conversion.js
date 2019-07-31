@@ -14,11 +14,17 @@ $(document).ready(function () {
 /*Function to reset converter*/
 function reset(){
     var list1 = document.getElementById('firstList');
+    var list2 = document.getElementById("secondList");
+    var list3 = document.getElementById("thirdList");
     document.getElementById('myCon').value="";
     document.getElementById("finalCon").innerHTML = "Please select a conversion type";
 	list1.options[0] = new Option('--Select--', '');
 	list1.options[1] = new Option('Weight', 'Weight');
 	list1.options[2] = new Option('Length', 'Length'); 
+    list2.options.length=0;
+    list3.options.length=0;
+    list2.options[0] = new Option('Please select a conversion type', '');
+    list3.options[0] = new Option('Please select a conversion type', ''); 
 }
 
 /*function to populate the drop down menus based on user selection*/
