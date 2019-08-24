@@ -3,20 +3,22 @@
 $(document).ready(function () {
  
 	var list1 = document.getElementById('firstList');
- 	document.getElementById('myCon').value="";
-	document.getElementById("finalCon").innerHTML = "Please select a conversion type";
+    document.getElementById('myCon').value="";
+    document.getElementById("finalCon").innerHTML = "Please select a conversion type";
 	list1.options[0] = new Option('--Select--', '');
 	list1.options[1] = new Option('Weight', 'Weight');
 	list1.options[2] = new Option('Length', 'Length');
-	
-	//Hides the keyboard if the user presses submit
+
+    //Hides the keyboard if the user presses submit
     $("#myCon").on("keyup", function(event){
     if (event.keyCode == 13) {
             event.preventDefault();
             event.target.blur()
         }
+})
 
 });
+
 
 /*Function to reset converter*/
 function reset(){
@@ -31,10 +33,9 @@ function reset(){
     list2.options.length=0;
     list3.options.length=0;
     list2.options[0] = new Option('Please select a conversion type', '');
-    list3.options[0] = new Option('Please select a conversion type', ''); 
+    list3.options[0] = new Option('Please select a conversion type', '');
 }
 
-/*function to populate the drop down menus based on user selection*/
 function getItems(){
  
             var list1 = document.getElementById('firstList');
@@ -96,7 +97,7 @@ function getItems(){
                 list3.options.length=0;
                 list2.options[0] = new Option('Please select a conversion type', '');
                 list3.options[0] = new Option('Please select a conversion type', '');
-		document.getElementById("finalCon").innerHTML = "Please select a conversion type";
+                document.getElementById("finalCon").innerHTML = "Please select a conversion type";
             }
 
 }
@@ -154,7 +155,7 @@ function convert1(){
 	}
 
 	else{
-		document.getElementById("finalCon").innerHTML = "Please select a proper conversion type";
+		document.getElementById("finalCon").innerHTML = "Please select a valid conversion type";
 	}
 }
 

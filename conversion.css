@@ -18,14 +18,8 @@
 #finalCon{
 	font-size: 30px;
 	margin-top: 30px;
-	margin-bottom: 70px;
+	margin-bottom: 30px;
 	text-align: center;
-	font-size: 30px;
-}
-
-#resetBut{
-    text-align: center;
-    margin-bottom: 70px;
 }
 
 #conBut{
@@ -34,11 +28,18 @@
 	width: 100%;
 }
 
+#resetBut{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
 .listHeader{
 	font-size: 30px;
 	text-align: center;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
-
+.dropdown-backdrop{
+    position: static;
+}
 

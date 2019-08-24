@@ -7,15 +7,15 @@
 	<meta charset="utf-8">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	 <!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="jquery-3.4.0.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+	
+	 
 	<link rel="stylesheet" type="text/css" href="conversion.css">
 	 <script src="conversion.js"></script> 
 </head>
@@ -42,18 +42,18 @@
     <div class="row" style="margin-bottom: 30px;">
 
       <div class="col-md-6">
-        <h4 class="listHeader">List 1</h4>
-    		<select onchange="convert1()" class="form-control" id='secondList' name='secondList' > <!--Conversion From selector --> 
+        <h4 class="listHeader">Convert from:</h4>
+    	<select onchange="convert1()" class="form-control" id='secondList' name='secondList' > <!--Conversion From selector --> 
           <option value="">Please select a conversion type</option>
-    		</select>
+    	</select>
       </div>
     	
         
       <div class="col-md-6"> 
-        <h4 class="listHeader">List 2</h4>
-    		<select onchange="convert1()" class="form-control" id='thirdList' name='thirdList' >  <!--Conversion To selector -->  
+        <h4 class="listHeader">Convert to:</h4>
+    	<select onchange="convert1()" class="form-control" id='thirdList' name='thirdList' >  <!--Conversion To selector -->  
           <option value="">Please select a conversion type</option>
-    		 </select>
+    	</select>
       </div>
 
     </div>   
@@ -64,7 +64,7 @@
 
       <div class="col-md-12">
         <h4 class="listHeader">Input</h4>
-  		  <input type="number" oninput="convert1()" style="text-align: center;" placeholder="Enter number here...." class="form-control" id="myCon"> 
+  		<input type="number" oninput="convert1()" style="text-align: center;" placeholder="Enter number here...." class="form-control" id="myCon"> 
       </div> 
 
     </div>
@@ -79,10 +79,10 @@
     <div class="row">	
   	 <p id="finalCon" ><br></p>
     </div>
-	
+
     <div id="resetBut" class="row">	
   	 <button type="button" class="btn btn-primary btn-lg" onclick="reset()">Reset</button>
-    </div>		
+    </div>
 
     </div>
 
